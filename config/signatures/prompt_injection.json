@@ -1,0 +1,10 @@
+[
+  {
+    "id": "ignore_previous",
+    "kind": "PROMPT_INJECTION_DIRECTIVE",
+    "pattern": "\\b(?:ignore|disregard)\\s+previous\\b",
+    "category": "PROMPT_ATTACK",
+    "riskWeight": 0.7,
+    "enabled": true
+  }
+]

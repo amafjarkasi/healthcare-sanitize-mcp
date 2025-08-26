@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "defaultAction": "KEEP",
+  "rules": [
+    { "match": { "kind": "SECRET_*" }, "action": "REDACT" },
+    { "match": { "kind": "PII_EMAIL" }, "action": "TOKENIZE_LINKABLE" },
+    { "match": { "kind": "PROMPT_INJECTION_*" }, "action": "STRIP_LINE" }
+  ],
+  "tokenization": {
+    "hmacAlgo": "SHA256",
+    "truncateBytes": 9,
+    "encoding": "base32"
+  }
+}
