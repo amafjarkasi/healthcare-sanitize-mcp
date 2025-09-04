@@ -1,0 +1,10 @@
+[
+  {
+    "id": "email_basic",
+    "kind": "PII_EMAIL",
+    "pattern": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}",
+    "category": "PII",
+    "riskWeight": 0.5,
+    "enabled": true
+  }
+]

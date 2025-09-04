@@ -1,0 +1,27 @@
+{
+  "name": "hsx-context-hygiene",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "hsx-cli": "dist/cli/hsxCli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/cli/hsxCli.ts",
+    "lint": "eslint . --ext .ts",
+    "prepare": "npm run build",
+    "test": "node --test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "typescript": "^5.5.4",
+    "eslint": "^9.9.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "tsx": "^4.16.0"
+  },
+  "engines": { "node": ">=18.18" },
+  "license": "MIT"
+}
